@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        Object object = new Object();
+        Scanner scanner = new Scanner(System.in);
 
         Item obj1 = new Item();
         obj1.id = 1;
@@ -26,7 +31,18 @@ public class Main {
 //        cat1.sound();
 //        cat2.sound();
 
+        Building building1 = new Building("ktovet",4,20,4);
+//        System.out.println(building1);
+        House house1 = new House("ktovet",2, 6,2,false);
+//        System.out.println(house1);
+
+        Animal anml1 = new Animal("Hatool", 9);
+        Animal anml2 = new Animal("Hatool", 10);
+        System.out.println(anml1.compareTo(anml2));
+
     }
+
+
 
     //overload
     public static void func1(int x){
